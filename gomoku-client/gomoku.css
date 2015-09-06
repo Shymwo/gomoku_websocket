@@ -1,0 +1,38 @@
+body {
+	width: 700px;
+	margin: auto;
+	padding: 5px;
+	background: transparent url("wood.jpg") repeat scroll;
+}
+
+header {
+	background-color:black;
+	color:yellow;
+	text-align:center;
+	padding:5px;
+}
+
+#intro {
+	position: absolute;
+	width: inherit;
+	text-align: center;
+}
+
+#game {
+	width: inherit;
+}
+
+#board {
+	float: left;
+	padding: 10px;
+}
+
+#info {
+	width: 160px;
+	float: left;
+	padding: 20px;
+}
+
+.hidden {
+	display: none;
+}

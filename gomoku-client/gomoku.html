@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+		<meta charset="UTF-8">
+		<title>GoMoku</title>
+		<link rel="stylesheet" href="gomoku.css">
+		<script src="jquery-2.1.4.min.js"></script>
+		<script src="gomoku.js"></script>
+		<script type="text/javascript"> 
+			window.addEventListener("load", init, false);
+		</script>
+	</head>
+<body>
+	
+	<header>
+		<h1>GoMoku</h1>
+	</header>
+
+	<div id="intro">
+		<h2>Enter the game:</h2>
+		<input id="gameName"></input>
+		<button id="playButton" disabled="true">Play</button>
+		<h3 id="introMessage"></h3>
+	</div>
+
+	<div id="game" class="hidden">
+		<div id="board">
+			<canvas id="tbl_canvas"></canvas>
+		</div>
+
+		<div id="info">
+			Player: <span id="player">-</span><br><br>
+			White wins: <span id="white_wins">0</span><br>
+			Black wins: <span id="black_wins">0</span><br>
+			<button id="restartButton" disabled="true">Restart game</button>
+			<br><button id="endButton">End game</button><br><br>
+			<span id="gameMessage">---</span>
+		</div>
+	</div>
+
+</body>
+</html>
